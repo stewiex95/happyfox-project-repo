@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [HappyFoxTestSuite]">
+  <listeners>
+    <listener class-name="utils.TestngListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="TicketExperienceTests(failed)">
+    <classes>
+      <class name="web_app_tests.HappyFoxTestCases">
+        <methods>
+          <include name="setUpExtentHtmlReporter"/>
+          <include name="initializeDriverAndFetchUrl"/>
+          <include name="loginToAgentPortalToCreateNewStatusAndPriority" invocation-numbers="0"/>
+          <include name="setUpDriver"/>
+          <include name="tearDown"/>
+          <include name="generateExtentReports"/>
+          <include name="verifyTicketChangesBasedOnDefaultStatusAndPriority"/>
+          <include name="deleteNewlyCreatedStatusAndPriority"/>
+        </methods>
+      </class> <!-- web_app_tests.HappyFoxTestCases -->
+    </classes>
+  </test> <!-- TicketExperienceTests(failed) -->
+</suite> <!-- Failed suite [HappyFoxTestSuite] -->

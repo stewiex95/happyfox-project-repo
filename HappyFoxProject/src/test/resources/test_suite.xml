@@ -1,0 +1,16 @@
+<suite name="HappyFoxTestSuite">
+    <listeners>
+        <listener class-name="utils.TestngListenerClass"/>
+    </listeners>
+    <test name="TicketExperienceTests">
+        <classes>
+            <class name="web_app_tests.HappyFoxTestCases">
+                <methods>
+                    <include name="loginToAgentPortalToCreateNewStatusAndPriority" />
+                    <include name="verifyTicketChangesBasedOnDefaultStatusAndPriority" />
+                    <include name="deleteNewlyCreatedStatusAndPriority" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
